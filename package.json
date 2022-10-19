@@ -1,0 +1,49 @@
+{
+  "name": "sanitize-vue3",
+  "description": "A simple component to sanitize and parse HTML in vue3 and ts",
+  "version": "0.1.0",
+  "private": false,
+  "author": {
+    "name": "BIYA Paul - bpsmartdesign",
+    "email": "bpsmartdesign@hotmail.com",
+    "url": "https://bpsmartdesign.tk"
+  },
+  "repository": {
+    "url": "#",
+    "directory": "",
+    "type": ""
+  },
+  "bugs": {
+    "url": "https://bpsmartdesign.tk",
+    "email": "bpsmartdesign@hotmail.com"
+  },
+  "keywords": [
+    "sanitize-html",
+    "vue",
+    "vue-3",
+    "v-html",
+    "ts",
+    "typescript",
+    "vite",
+    "bpsmartdesign",
+    "parse html"
+  ],
+  "license": "MIT",
+  "files": [],
+  "main": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.1.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vue-tsc": "^0.40.4"
+  }
+}
