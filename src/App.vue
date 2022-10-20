@@ -1,7 +1,13 @@
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import SanitizeVue3 from "../lib/sanitize-vue3.vue";
+import { ref } from "vue";
+
+const _html = ref<string>(
+  `<h1>Bonjour Paul</h1><p>J'aimerai vous convier a un <strong>anniverssaire</strong></p>`
+);
 </script>
 
 <template>
@@ -14,6 +20,7 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <SanitizeVue3 :html="_html" />
 </template>
 
 <style scoped>
