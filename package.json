@@ -28,12 +28,23 @@
     "parse html"
   ],
   "license": "MIT",
-  "files": [],
-  "main": "",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/sanitize-vue3.umd.cjs",
+  "module": "./dist/sanitize-vue3.umd.js",
   "type": "module",
+  "types": "./dist/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/sanitize-vue3.js",
+      "require": "./dist/sanitize-vue3.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
     "preview": "vite preview"
   },
   "dependencies": {
