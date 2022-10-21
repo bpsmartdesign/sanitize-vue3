@@ -21,7 +21,7 @@ npm install --save sanitize-vue3
 Register the component globally
 
 ```js
-import SanitizeVue3 from "sanitize-vue3";
+import { SanitizeVue3 } from "sanitize-vue3";
 
 const app = createApp(App); // App should be probably your main App.vue component or something else
 app.component("SanitizeVue3", SanitizeVue3);
@@ -32,7 +32,7 @@ app.component("SanitizeVue3", SanitizeVue3);
 Use the component locally
 
 ```js
-import SanitizeVue3 from "sanitize-vue3";
+import { SanitizeVue3 } from "sanitize-vue3";
 ```
 
 And use it on template like
