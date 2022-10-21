@@ -1428,6 +1428,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sanitize-vue3@file:./sanitize-vue3-1.0.6.tgz::locator=sanitize-vue3%40workspace%3A.":
+  version: 1.0.6
+  resolution: "sanitize-vue3@file:./sanitize-vue3-1.0.6.tgz::locator=sanitize-vue3%40workspace%3A."
+  dependencies:
+    sanitize-html: ^2.7.2
+    vue: ^3.2.37
+  checksum: f8ec6c1439981cde3cc8a9b9366f9e1b0b845a9da6d8b83ec3739ae04b45aa8788122ea08b15338f914a5c1b155e6e7ba2c885a1f2d71b84a094bdd59360159d
+  languageName: node
+  linkType: hard
+
 "sanitize-vue3@workspace:.":
   version: 0.0.0-use.local
   resolution: "sanitize-vue3@workspace:."
@@ -1436,6 +1446,7 @@ __metadata:
     "@types/sanitize-html": ^2.6.2
     "@vitejs/plugin-vue": ^3.1.0
     sanitize-html: ^2.7.2
+    sanitize-vue3: ./sanitize-vue3-1.0.6.tgz
     typescript: ^4.6.4
     vite: ^3.1.0
     vue: ^3.2.37
