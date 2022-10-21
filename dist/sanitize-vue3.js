@@ -6758,7 +6758,7 @@ Bt.simpleTransform = function(s, t, e) {
     };
   };
 };
-const p4 = u4, g4 = /* @__PURE__ */ Sr({
+const p4 = u4, d4 = /* @__PURE__ */ Sr({
   __name: "sanitize-vue3",
   props: {
     html: { default: void 0 }
@@ -6780,7 +6780,7 @@ const p4 = u4, g4 = /* @__PURE__ */ Sr({
       ref: e
     }, null, 512));
   }
-});
+}), m4 = { sanitizeVue3: d4 };
 export {
-  g4 as sanitizeVue3
+  m4 as default
 };
