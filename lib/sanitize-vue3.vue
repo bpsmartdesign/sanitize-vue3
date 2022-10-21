@@ -1,19 +1,17 @@
 <script lang="ts" setup>
 import sanitizeHtml from "sanitize-html";
-import { onMounted, ref, watch } from "vue";
+import { Ref, ref, watch } from "vue";
 
 interface DescriptionProps {
   html: string;
 }
-const block = ref<HTMLDivElement>();
+const block = ref() as Ref<HTMLDivElement>;
 
 const onUpdateContent = () => {
   if (block.value) block.value.innerHTML = sanitizeHtml(props.html);
 };
 
-onMounted(() => {
-  onUpdateContent();
-});
+onUpdateContent();
 
 watch(
   () => props.html as string | undefined,
