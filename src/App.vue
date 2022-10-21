@@ -2,7 +2,7 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from "./components/HelloWorld.vue";
-import SanitizeVue3 from "../lib/sanitize-vue3.vue";
+import { sanitizeVue3 } from "sanitize-vue3";
 import { ref } from "vue";
 
 const _html = ref<string>(
@@ -20,7 +20,7 @@ const _html = ref<string>(
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
-  <SanitizeVue3 :html="_html" />
+  <sanitizeVue3 :html="_html" />
 </template>
 
 <style scoped>
